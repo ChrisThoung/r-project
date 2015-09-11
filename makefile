@@ -1,6 +1,7 @@
 # [PROJECT]
 
 R=R --vanilla --slave -q -f
+folders = cache data munge src
 
 # help
 .PHONY : help
@@ -13,4 +14,4 @@ help :
 # setup
 .PHONY : setup
 setup :
-	mkdir cache data lib munge src
+	mkdir $(folders)
